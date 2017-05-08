@@ -1,11 +1,8 @@
 [
-    {"name": "one", "type" : true},
-    {"name": "two", "type" : true},
-    {"name": "three", "type" : true},
-    {"name": "four", "type" : true},
-    {"name": "five", "type" : true},
-    {"name": "six", "type" : true},
-    {"name": "ONE", "type" : false},
-    {"name": "TWO", "type" : false},
-    {"name": "THREE", "type" : false}
+    {
+        "name": "College",
+        "type": "Education",
+        "img": "../assets/sass.svg",
+        "description": "Some junk"
+    }
 ]
