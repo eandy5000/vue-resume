@@ -1,13 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+  <head-component></head-component>
     <router-view></router-view>
+  <foot-component></foot-component>
   </div>
 </template>
 
 <script>
+import HeadComponent from './components/HeadComponent.vue'
+import FootComponent from './components/FootComponent.vue'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    HeadComponent,
+    FootComponent
+  }
 }
 </script>
 
