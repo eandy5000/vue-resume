@@ -2,22 +2,28 @@
   <div class="hello">
     <h1>About</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste placeat eum cumque. Repellat dolore sunt dignissimos quidem similique amet quo facilis blanditiis repellendus soluta dicta, quas, maxime eos delectus magnam.</p>
-    I work
-    <img v-bind:src ="data[0].img"/>
-    {{data[0].name}}
+
+      <div v-for="item in tech">
+       {{ item.name }}
+        <img :src="item.img" />
+      </div>
+
   </div>
 </template>
 <script>
     import data from '../model/data.js'
-    import sassImg from '../assets/sass.svg'
 
     export default {
+      data () {
+        return {
+          data: data()
+        }
+      },
       computed: {
-        data: function () {
-          return data()
-        },
-        sassImg () {
-          return sassImg
+        tech () {
+          return this.data.filter((item) => {
+            return (item.type === 'Technology')
+          })
         }
       },
       created () {
