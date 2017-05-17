@@ -3,14 +3,14 @@
     <h1>Main Content Area</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste placeat eum cumque. Repellat dolore sunt dignissimos quidem similique amet quo facilis blanditiis repellendus soluta dicta, quas, maxime eos delectus magnam.</p>
     <div v-for="item in edu">
-    {{item.name}}
-    <img :src="item.img" width="100" />
+      <media-edu :image="item.img" :title="item.name"></media-edu>
     </div>
   </div>
 </template>
 
 <script>
 import data from '../model/data.js'
+import MediaEdu from './MediaEdu.vue'
 
 export default {
   data () {
@@ -25,6 +25,9 @@ export default {
   },
   created () {
     return
+  },
+  components: {
+    MediaEdu
   }
 }
 </script>

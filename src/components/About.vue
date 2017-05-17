@@ -4,14 +4,14 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste placeat eum cumque. Repellat dolore sunt dignissimos quidem similique amet quo facilis blanditiis repellendus soluta dicta, quas, maxime eos delectus magnam.</p>
 
       <div v-for="item in tech">
-       {{ item.name }}
-        <img :src="item.img" width="100" />
+       <media-tech :title="item.name" :image="item.img"></media-tech>
       </div>
 
   </div>
 </template>
 <script>
     import data from '../model/data.js'
+    import MediaTech from './MediaTech.vue'
 
     export default {
       data () {
@@ -28,6 +28,9 @@
       },
       created () {
         console.log(this.data)
+      },
+      components: {
+        MediaTech
       }
     }
 </script>
