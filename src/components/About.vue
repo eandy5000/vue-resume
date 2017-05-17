@@ -5,7 +5,7 @@
 
       <div v-for="item in tech">
        {{ item.name }}
-        <img :src="item.img" />
+        <img :src="item.img" width="100" />
       </div>
 
   </div>
