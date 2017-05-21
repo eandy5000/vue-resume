@@ -1,7 +1,6 @@
 <template>
     <div>
         <nav-bar></nav-bar>
-        <h3>Header</h3>
     </div>
 </template>
 

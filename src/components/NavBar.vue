@@ -1,7 +1,7 @@
 <template>
 	<div>
+		<h4 class="title">Resume</h4>
 		<ul>
-		  <h4 class="title">Title</h4>
 			<router-link :to="{path: 'Home'}"><li class="link">Home</li></router-link>
 			<router-link :to="{path: 'About'}"><li class="link">About</li></router-link>
 		</ul>
@@ -23,7 +23,7 @@
 		letter-spacing: .1em; 
 		}
 	.title {
-		font-size: 200%;
+		font-size: 180%;
 		margin: 0 0 .5em 0;
 		padding: 0;
 	}
@@ -34,7 +34,8 @@
 		font-weight: bold;
 		transition: all .2s linear;
 	}
-	.link:hover {
+	.link:hover,
+	.link:focus, {
 		color: white;
 		border-color: white; 
 		background-color: #2c3e50;
@@ -44,10 +45,38 @@
 		color: inherit;
 		text-decoration: none;
 	}
+	/*******************
+		Media Queries
+	*******************/
 
 @media screen and (min-width: 1025px)  {
 		div {
-			color: red;
+			border-bottom: 1px solid #2c3e50;
+			display: flex;
+		}
+		ul {
+			display: flex;
+		}
+		.title {
+			margin-right: auto;
+			margin-left: 2em;
+		}
+		.link {
+			border: none;
+		}
+	}
+
+	@media screen and (min-width: 769px) and (max-width: 1024px){
+		div {
+			border-bottom: 1px solid #2c3e50;
+		}
+		ul {
+			display: flex;
+			justify-content: center;
+			padding: 1em 0;
+		}
+		.link {
+			padding: .7em 3em;
 		}
 	}
 </style>
