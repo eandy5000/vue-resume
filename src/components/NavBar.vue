@@ -1,10 +1,9 @@
 <template>
 	<div>
-
 		<ul>
-		  <li><h4>Title</h4></li>
-			<li><router-link :to="{path: 'Home'}">Home</router-link></li>
-			<li><router-link :to="{path: 'About'}">About</router-link></li>
+		  <h4 class="title">Title</h4>
+			<router-link :to="{path: 'Home'}"><li class="link">Home</li></router-link>
+			<router-link :to="{path: 'About'}"><li class="link">About</li></router-link>
 		</ul>
 	</div>
 </template>
@@ -14,48 +13,41 @@
 	}
 </script>
 <style scoped>
-	div{
-		margin:0;
-	}
-	h4 {
-		font-size: 200%;
-		margin: 0;
+	div {
+		color: #2c3e50;
 	}
 	ul {
-		list-style: none;
-		display:flex;
-		flex-direction: column;
 		margin: 0;
 		padding: 0;
-		transition: all 1s linear;
+		list-style: none;
+		letter-spacing: .1em; 
+		}
+	.title {
+		font-size: 200%;
+		margin: 0 0 .5em 0;
+		padding: 0;
 	}
-	ul li {
-		border: 1px solid black;
-		margin-bottom: 1em;
-		padding: .4em;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-left: 0;
+	.link {
+		border: 1px solid #2c3e50;
+		padding: .3em;
+		margin: 0 2em .5em 2em;
+		font-weight: bold;
+		transition: all .2s linear;
 	}
-	ul li:hover,
-	ul li:focus {
-		background-color: #222;
+	.link:hover {
 		color: white;
-	}
-		ul li:first-child {
-		border: none;
-	}
-		ul li:first-child:hover,
-		ul li:first-child:focus {
-		background-color: white;
-		color: #000;
+		border-color: white; 
+		background-color: #2c3e50;
+		transform: scale(1, 1.3);
 	}
 	a {
+		color: inherit;
 		text-decoration: none;
-		color: #000;
 	}
-	ul li:hover a {
-		color: white;
+
+@media screen and (min-width: 1025px)  {
+		div {
+			color: red;
+		}
 	}
 </style>

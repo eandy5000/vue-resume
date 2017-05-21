@@ -30,7 +30,7 @@
 	export default {
 	  props: ['title', 'image'],
 	  created () {
-    console.log(this.title)
+
 	  }
 }
 </script>
