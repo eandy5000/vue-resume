@@ -27,7 +27,6 @@
         }
       },
       created () {
-        console.log(this.data)
       },
       components: {
         MediaTech

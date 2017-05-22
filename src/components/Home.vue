@@ -28,7 +28,6 @@ export default {
     edu () {
       let out = this.data.filter(listItem => (listItem.type === 'Education'))
       out = out.sort((a, b) => (a.position - b.position))
-      console.log(out)
       return out
     }
   },
