@@ -35,7 +35,7 @@
             display: inline;
             padding-left: 1em;
         }
-        span:nth-child(2) {
+        span:nth-of-type(1) {
             padding-left: 0;
         }
     }
