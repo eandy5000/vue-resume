@@ -17,19 +17,25 @@ const array = [
     'name': 'AMU',
     'type': 'Education',
     'img': images.amu,
-    'description': 'Some junk'
+    'description': 'Masters Political Science',
+    'years': '2008-2012',
+    'position': 1
   },
   {
     'name': 'UWRF',
     'type': 'Education',
     'img': images.uwrf,
-    'description': 'Some junk'
+    'description': 'Bachelors Political Science',
+    'years': '1998-2001',
+    'position': 2
   },
   {
     'name': 'Prime Academy',
     'type': 'Education',
     'img': images.prime,
-    'description': 'Some junk'
+    'description': 'Full Stack Javascript Bootcamp',
+    'years': '2015-2016',
+    'position': 0
   },
   {
     'name': 'Grunt',
