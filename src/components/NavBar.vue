@@ -2,7 +2,8 @@
 	<div>
 		<h4 class="title">Resume</h4>
 		<ul>
-			<router-link :to="{path: 'Home'}"><li class="link">Home</li></router-link>
+			<router-link :to="{path: 'Experience'}"><li class="link">Experience</li></router-link>
+			<router-link :to="{path: 'Projects'}"><li class="link">Projects</li></router-link>
 			<router-link :to="{path: 'About'}"><li class="link">About</li></router-link>
 		</ul>
 	</div>
