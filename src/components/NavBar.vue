@@ -2,15 +2,32 @@
 	<div>
 		<h4 class="title">Resume</h4>
 		<ul>
-			<router-link :to="{path: 'Experience'}"><li class="link">Experience</li></router-link>
-			<router-link :to="{path: 'Projects'}"><li class="link">Projects</li></router-link>
-			<router-link :to="{path: 'About'}"><li class="link">About</li></router-link>
+			<router-link :to="{path: 'Experience'}">
+				<li 
+					:class="{link: true, active: activePage('/')}"
+				>Experience</li>
+			</router-link>
+			<router-link :to="{path: 'Projects'}">
+				<li 
+					:class="{link: true, active: activePage('/Projects')}"
+				>Projects</li>
+			</router-link>
+			<router-link :to="{path: 'About'}">
+				<li 
+					:class="{link: true, active: activePage('/About')}"
+				>About</li>
+			</router-link>
 		</ul>
 	</div>
 </template>
 <script>
 	export default {
-
+	  methods: {
+    activePage (selectPage) {
+      let page = this.$route.fullPath
+      return selectPage === page
+	    }
+	  }
 	}
 </script>
 <style scoped>
@@ -36,11 +53,10 @@
 		transition: all .2s linear;
 	}
 	.link:hover,
-	.link:focus, {
-		color: white;
-		border-color: white; 
+	.link:focus,
+	.link.active {
 		background-color: #2c3e50;
-		transform: scale(1, 1.3);
+		color: white;
 	}
 	a {
 		color: inherit;
@@ -64,6 +80,13 @@
 		}
 		.link {
 			border: none;
+		}
+		.link:hover,
+		.link:focus,
+		.link.active {
+			transform: scale(1.3, 1.3);
+			background-color: white;
+			color: #2c3e50; 
 		}
 	}
 

@@ -14,6 +14,10 @@ import prime from '../assets/primelogo.png'
 import uwrf from '../assets/uwrf.jpeg'
 import wikistrat from '../assets/wikistrat.png'
 import stericycle from '../assets/stericycle.jpg'
+import questar from '../assets/questarLogo.jpg'
+import webpack from '../assets/webpack.png'
+import react from '../assets/react.png'
+import git from '../assets/git.png'
 
 export default {
   angular,
@@ -31,5 +35,9 @@ export default {
   prime,
   uwrf,
   wikistrat,
-  stericycle
+  stericycle,
+  questar,
+  webpack,
+  react,
+  git
 }
