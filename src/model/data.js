@@ -106,7 +106,7 @@ const array = [
   {
     'name': 'Questar Assessment Inc',
     'type': 'Experience',
-    'img': images.stericycle,
+    'img': images.questar,
     'description': 'Some junk'
   }
 ]

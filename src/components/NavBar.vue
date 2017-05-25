@@ -24,9 +24,13 @@
 	export default {
 	  methods: {
     activePage (selectPage) {
-      let page = this.$route.fullPath
-      return selectPage === page
+      return selectPage === this.page
 	    }
+	  },
+	  computed: {
+    page () {
+      return this.$route.fullPath
+    }
 	  }
 	}
 </script>
