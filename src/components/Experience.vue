@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>Experience</h1>
+    <h2>Experience</h2>
     <div v-for="item in exp">
       <media-edu 
         :image="item.img" 
@@ -10,7 +10,7 @@
       >
       </media-edu>
     </div>
-    <h1>Education</h1>
+    <h2>Education</h2>
     <div v-for="item in edu">
       <media-edu
         :image="item.img" 
