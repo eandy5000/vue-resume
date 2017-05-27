@@ -39,6 +39,11 @@
 		.container img {
 		align-self: center; 
 		}
+		.headings {
+			align-self: center;
+			padding: 0;
+			margin: 0;
+		}
 	}
 
 </style>

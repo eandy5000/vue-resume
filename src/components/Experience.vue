@@ -3,7 +3,7 @@
 
     <section>
     <h2>Work</h2>
-      <div v-for="item in exp">
+      <div v-for="item in exp" class="items">
         <media-edu 
           :image="item.img" 
           :title="item.name" 
@@ -16,7 +16,7 @@
     
     <section>
     <h2>Education</h2>
-      <div v-for="item in edu">
+      <div v-for="item in edu" class="items">
         <media-edu
           :image="item.img" 
           :title="item.name" 
@@ -106,8 +106,5 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-  section {
-    
   }
 </style>
