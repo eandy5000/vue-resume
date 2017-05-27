@@ -19,8 +19,9 @@
 		margin: 1em auto;
 	}
 	.container img {
-		align-self: center;
-		padding-left: .5em;
+		align-self: flex-start; 
+ 		padding-left: .5em;
+		margin-top: 1em;
 		
 	}
 	.headings {

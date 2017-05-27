@@ -37,19 +37,25 @@ export default {
           'name': 'Wikistrat',
           'type': 'Experience',
           'img': images.wikistrat,
-          'description': 'Some junk'
+          'years': '2011-2016',
+          'position': 1,
+          'description': 'Researched and wrote analysis on complex issues surrounding globalization and international relations.'
         },
         {
           'name': 'Stericycle',
           'type': 'Experience',
+          'years': 'Blaine, MN 2013-2015',
           'img': images.stericycle,
-          'description': 'Some junk'
+          'position': 2,
+          'description': 'Responsible for the safe packaging and transportation of Hazardous Waste, in multiple jurisdictions, in compliance with local and Federal regulations. '
         },
         {
           'name': 'Questar Assessment Inc',
           'type': 'Experience',
+          'years': '2016-Present',
           'img': images.questar,
-          'description': 'Some junk'
+          'description': 'Assured function of education websites as part of the Forms and Items Team. Used JIRA ticketing to handle workflows and interactions between teams. Tasks included adjusting layouts, formatting content and troubleshooting of text-to-speech issues. Primary technologies utilized: Git, HTML, CSS, XML. Also used the Tao and Saras CMS to create and edit tests and manage question items. ',
+          'position': 0
         }
       ],
       edu: [
@@ -83,6 +89,7 @@ export default {
   components: {
     MediaEdu
   }
+
 }
 </script>
 

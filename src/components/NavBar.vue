@@ -59,7 +59,7 @@
 	.link:hover,
 	.link:focus,
 	.link.active {
-		background-color: #2c3e50;
+		background-color: #5B8C5A;
 		color: white;
 	}
 	a {
