@@ -22,12 +22,25 @@
 		align-self: flex-start; 
  		padding-left: .5em;
 		margin-top: 1em;
-		
 	}
 	.headings {
 		margin-right: 1em;
 		padding-left: .3em;
 	}
+
+	/**********************
+	media queries
+	***********************/
+
+	@media screen and (max-width: 769px) {
+		.container {
+			flex-direction: column;
+		}
+		.container img {
+		align-self: center; 
+		}
+	}
+
 </style>
 <script>
 	export default {

@@ -1,12 +1,8 @@
 <template>
   <div class="hello">
-    <h2>Projects</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste placeat eum cumque. Repellat dolore sunt dignissimos quidem similique amet quo facilis blanditiis repellendus soluta dicta, quas, maxime eos delectus magnam.</p>
-
-      <div v-for="item in tech">
-       <media-tech :title="item.name" :image="item.img"></media-tech>
-      </div>
-
+    <h2>Projects <span>Coming Soon</span></h2>
+    <p>To see what I am currently working on check out my  <a href="https://github.com/eandy5000">Github repo</a></p>
+    
   </div>
 </template>
 <script>
@@ -33,3 +29,12 @@
       }
     }
 </script>
+
+<style>
+  span {
+    font-weight: normal;
+  }
+  a {
+    color: #2c3e50;
+  }
+</style>

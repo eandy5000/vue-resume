@@ -1,25 +1,32 @@
 <template>
-  <div class="hello">
-    <h2>Experience</h2>
-    <div v-for="item in exp">
-      <media-edu 
-        :image="item.img" 
-        :title="item.name" 
-        :years="item.years"
-        :description="item.description"
-      >
-      </media-edu>
-    </div>
+  <div class="wrapper">
+
+    <section>
+    <h2>Work</h2>
+      <div v-for="item in exp">
+        <media-edu 
+          :image="item.img" 
+          :title="item.name" 
+          :years="item.years"
+          :description="item.description"
+        >
+        </media-edu>
+      </div>
+    </section>
+    
+    <section>
     <h2>Education</h2>
-    <div v-for="item in edu">
-      <media-edu
-        :image="item.img" 
-        :title="item.name" 
-        :years="item.years"
-        :description="item.description"
-      >
-      </media-edu>
-    </div>
+      <div v-for="item in edu">
+        <media-edu
+          :image="item.img" 
+          :title="item.name" 
+          :years="item.years"
+          :description="item.description"
+        >
+        </media-edu>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -95,5 +102,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  section {
+    
+  }
 </style>
