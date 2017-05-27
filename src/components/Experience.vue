@@ -3,12 +3,13 @@
 
     <section>
     <h2>Work</h2>
-      <div v-for="item in exp" class="items">
+      <div v-for="item in sortExp" class="items">
         <media-edu 
           :image="item.img" 
           :title="item.name" 
           :years="item.years"
           :description="item.description"
+          :tech="item.tech"
         >
         </media-edu>
       </div>
@@ -16,7 +17,7 @@
     
     <section>
     <h2>Education</h2>
-      <div v-for="item in edu" class="items">
+      <div v-for="item in sortEdu" class="items">
         <media-edu
           :image="item.img" 
           :title="item.name" 
@@ -31,14 +32,13 @@
 </template>
 
 <script>
-import data from '../model/data.js'
+
 import MediaEdu from './MediaEdu.vue'
 import images from '../model/images'
 
 export default {
   data () {
     return {
-      data: data(),
       exp: [
         {
           'name': 'Wikistrat',
@@ -61,7 +61,8 @@ export default {
           'type': 'Experience',
           'years': '2016-Present',
           'img': images.questar,
-          'description': 'Assured function of education websites as part of the Forms and Items Team. Used JIRA ticketing to handle workflows and interactions between teams. Tasks included adjusting layouts, formatting content and troubleshooting of text-to-speech issues. Primary technologies utilized: Git, HTML, CSS, XML. Also used the Tao and Saras CMS to create and edit tests and manage question items. ',
+          'description': 'Assured function of education websites as part of the Forms and Items Team. Used JIRA ticketing to handle workflows and interactions between teams. Tasks included adjusting layouts, formatting content and troubleshooting of text-to-speech issues.',
+          'tech': 'Primary technologies utilized: Git, HTML, CSS, XML. Also used the Tao and Saras CMS to create and edit tests and manage question items. ',
           'position': 0
         }
       ],
@@ -95,6 +96,14 @@ export default {
   },
   components: {
     MediaEdu
+  },
+  computed: {
+    sortEdu () {
+      return this.edu.sort((a, b) => a.position - b.position)
+    },
+    sortExp () {
+      return this.exp.sort((a, b) => a.position - b.position)
+    }
   }
 
 }

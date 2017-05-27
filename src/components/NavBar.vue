@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h4 class="title">Resume</h4>
+		<h4 class="title">Andy Eccleston</h4>
 		<ul>
 			<router-link :to="{path: 'Experience'}">
 				<li 

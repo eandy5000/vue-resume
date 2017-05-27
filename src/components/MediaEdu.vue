@@ -5,6 +5,7 @@
 				<h3>{{title}}</h3>
 				<h5>{{years}}</h5>
 				<p>{{description}}</p>
+				<p v-if="tech"><strong>Technologies:</strong> {{tech}}</p>
 			</div>
 		</div>
 </template>
@@ -25,7 +26,7 @@
 	}
 	.headings {
 		margin-right: 1em;
-		padding-left: .3em;
+		padding: 1em;
 	}
 
 	/**********************
@@ -41,7 +42,6 @@
 		}
 		.headings {
 			align-self: center;
-			padding: 0;
 			margin: 0;
 		}
 	}
@@ -49,7 +49,7 @@
 </style>
 <script>
 	export default {
-	  props: ['title', 'image', 'years', 'description'],
+	  props: ['title', 'image', 'years', 'description', 'tech'],
 	  created () {
 
 	  }
