@@ -15,7 +15,7 @@
 	
 </script>
 	export default {}
-<style>
+<style scoped>
 	div {
 		padding: 0 1em;
 	}

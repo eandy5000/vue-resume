@@ -1,7 +1,7 @@
 <template>
   <div id="app">
   <head-component></head-component>
-    <router-view></router-view>
+    <router-view class="view"></router-view>
   <foot-component></foot-component>
   </div>
 </template>
@@ -27,5 +27,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.view {
+  flex: 1 0 auto;
 }
 </style>
